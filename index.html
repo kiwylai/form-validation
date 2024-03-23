@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <div class="title">Get Started</div>
+            <!-- /**
+              *!  user name input here
+             **/ -->
+            <div>
+                <label for="username">User Name</label>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="username" id="username">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+              *!  email input here
+             **/ -->
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" name="email" id="email">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <div class="error"></div>
+            </div>
+
+            <!-- /**
+              *! password input here
+             **/ -->
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="password">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <div class="error"></div>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
